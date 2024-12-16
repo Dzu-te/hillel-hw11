@@ -29,19 +29,19 @@
     min-width:0px;
     height:100vh;
   }
-  .header{
+  body .header{
     background-color:var(--primary-grey-color);
     padding-inline:20px;
     padding-top:20px;
     padding-bottom:50px;
   }
-  .header-container{
+  body .header .header-container{
     padding-top:79px;
   }
-  .header-nav{
+  body .header .header-container .header-nav{
     margin-bottom:30px;
   }
-  .header-list-menu{
+  body .header .header-container .header-nav .header-list-menu{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -51,9 +51,9 @@
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
     gap:20px;
-    max-width:611px;
+    max-width:732px;
   }
-  .header-link-item{
+  body .header .header-container .header-nav .header-list-menu .header-link-item{
     text-decoration:none;
     font-family:Roboto;
     font-size:16px;
@@ -66,7 +66,7 @@
             text-decoration-skip-ink:none;
     color:black;
   }
-  .header-gen-text{
+  body .header .header-container .header-gen-text{
     font-family:Roboto;
     font-size:38px;
     font-weight:500;
@@ -77,10 +77,10 @@
             text-decoration-skip-ink:none;
     margin-bottom:20px;
   }
-  .header-about{
+  body .header .header-container .header-about{
     margin-bottom:30px;
   }
-  .header-button{
+  body .header .header-container .header-button{
     padding:19px 41px 20px 41px;
     color:white;
     background-color:var(--secondary-blue-color);
@@ -90,7 +90,7 @@
     display:-ms-flexbox;
     display:flex;
   }
-  .main-title{
+  body .main .main-title{
     font-family:Roboto;
     font-size:32px;
     line-height:37.5px;
@@ -101,19 +101,19 @@
     margin-top:30px;
     margin-bottom:20px;
   }
-  .main-text{
+  body .main .main-text{
     padding-bottom:20px;
     padding-inline:20px;
   }
-  .pj-container{
+  body .main .pj-container{
     background-color:var(--secondary-blue-color);
     width:100%;
   }
-  .secondary-pj-container{
+  body .main .pj-container .secondary-pj-container{
     margin-top:0;
     padding-top:0;
   }
-  .projects-list{
+  body .main .pj-container .secondary-pj-container .projects-list{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -128,7 +128,7 @@
     gap:20px;
     padding-inline:20px;
   }
-  .projects-item{
+  body .main .pj-container .secondary-pj-container .projects-list .projects-item{
     font-family:Roboto;
     font-size:21px;
     font-weight:500;
@@ -141,26 +141,26 @@
     background:left no-repeat url(../images/project.png);
     padding-left:70px;
   }
-  .pj-item-text{
+  body .main .pj-container .secondary-pj-container .projects-list .projects-item .pj-item-text{
     text-align:left;
     color:white;
     vertical-align:text-bottom;
   }
-  .main-title-container{
+  body .main-title-container{
     background-color:var(--primary-grey-color);
     padding:20px;
     padding-bottom:50px;
   }
-  .my-work-text{
+  body .main-title-container .my-work-text{
     margin-bottom:20px;
   }
-  .video-container{
+  body .main-title-container .video-container{
     position:relative;
     width:100%;
     padding-bottom:56.25%;
     height:0;
   }
-  .video{
+  body .main-title-container .video-container .video{
     position:absolute;
     top:0;
     left:0;
@@ -168,15 +168,15 @@
     height:100%;
     margin-bottom:100px;
   }
-  .footer{
+  body .footer{
     color:white;
   }
-  .footer-container{
+  body .footer .footer-container{
     padding-top:0;
     background-color:var(--secondary-blue-color);
     padding-inline:20px;
   }
-  .footer-title{
+  body .footer .footer-container .footer-title{
     font-family:Roboto;
     font-size:21px;
     font-weight:500;
@@ -187,87 +187,87 @@
             text-decoration-skip-ink:none;
     padding-top:30px;
   }
-  .footer-text{
+  body .footer .footer-container .footer-text{
     padding-bottom:30px;
     color:white;
   }
 }
 
 @media screen and (min-width: 1150px){
-  .header{
+  body .header{
     padding-block:0;
   }
-  .header-container{
+  body .header .header-container{
     padding-top:79px;
     padding-bottom:141px;
   }
-  .header-list-menu{
+  body .header .header-container .header-list-menu{
     -webkit-box-orient:horizontal;
     -webkit-box-direction:normal;
         -ms-flex-direction:row;
             flex-direction:row;
     max-width:1110px;
   }
-  .header-item-menu{
+  body .header .header-container .header-list-menu .header-item-menu{
     margin-right:41px;
     margin-bottom:162px;
   }
-  .header-link-item:hover{
+  body .header .header-container .header-list-menu .header-item-menu .header-link-item:hover{
     color:rgb(52, 84, 122);
     font-weight:500;
   }
-  .header-gen-text{
+  body .header-gen-text{
     margin-bottom:60px;
   }
-  .header-about{
+  body .header-about{
     margin-bottom:65px;
     width:540px;
   }
-  .header-button{
+  body .header-button{
     justify-self:flex-start;
     margin-bottom:0;
   }
-  .main-title{
+  body .main .main-title{
     margin-top:112px;
     margin-bottom:50px;
   }
-  .main-text{
+  body .main .main-text{
     margin-bottom:50px;
     padding-bottom:0;
     max-width:540px;
     margin-inline:auto;
   }
-  .secondary-pj-container{
+  body .main .secondary-pj-container{
     margin-bottom:0;
   }
-  .projects-list{
+  body .main .secondary-pj-container .projects-list{
     padding:100px 0 100px 0;
   }
-  .about-me-container{
+  body .main .about-me-container{
     background-color:var(--primary-grey-color);
     padding-bottom:100px;
   }
-  .main-title-container{
+  body .main .about-me-container .main-title-container{
     padding:0;
   }
-  .main-title-about-me{
+  body .main .about-me-container .main-title-container .main-title-about-me{
     margin-top:0;
     padding-top:100px;
   }
-  .my-work-text{
+  body .main .about-me-container .main-title-container .my-work-text{
     width:540px;
     margin-inline:auto;
     margin-bottom:57px;
   }
-  .footer{
+  body .footer{
     padding-block:0;
     background-color:var(--secondary-blue-color);
   }
-  .footer-title{
+  body .footer .footer-title{
     padding-top:50px;
     margin-bottom:20px;
   }
-  .footer-text{
+  body .footer .footer-text{
     padding-bottom:50px;
   }
 }
