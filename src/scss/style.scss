@@ -1,11 +1,316 @@
 @use "common";
 
-* {
-  box-sizing: border-box;
+:root {
+  --primary-grey-color: #EEEFF1;
+  --secondary-blue-color: #34547A;
+
 }
 
-body {
-  margin: 0;
+.text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.25px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #727272;
+}
 
-  font-family: Arial, Helvetica, sans-serif; // font-family
+.container {
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 0px) {
+
+  body {
+
+    min-width: 0px;
+    height: 100vh;
+  }
+
+  .header {
+    background-color: var(--primary-grey-color);
+    padding-inline: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .header-container {
+    padding-top: 79px;
+  }
+
+  .header-nav {
+    margin-bottom: 30px;
+  }
+
+  .header-list-menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 611px;
+
+
+  }
+
+  .header-link-item {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+  }
+
+
+  .header-gen-text {
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 78.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 20px;
+  }
+
+
+
+  .header-about {
+    margin-bottom: 30px;
+  }
+
+  .header-button {
+    padding: 19px 41px 20px 41px;
+    color: white;
+    background-color: var(--secondary-blue-color);
+    border: 0;
+    letter-spacing: 0.1em;
+    display: flex;
+
+  }
+
+
+
+
+  .main-title {
+    font-family: Roboto;
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .main-text {
+    padding-bottom: 20px;
+    padding-inline: 20px;
+  }
+
+  .pj-container {
+    background-color: var(--secondary-blue-color);
+    width: 100%;
+  }
+
+  .secondary-pj-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .projects-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-inline: 20px;
+  }
+
+  .projects-item {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24.61px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    background: left no-repeat url(assets/images/project.png);
+    padding-left: 70px;
+  }
+
+  .pj-item-text {
+    text-align: left;
+    color: white;
+    vertical-align: text-bottom;
+  }
+
+  .main-title-container {
+    background-color: var(--primary-grey-color);
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  .my-work-text {
+    margin-bottom: 20px;
+  }
+
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+
+
+
+
+
+  .footer {
+    color: white;
+  }
+
+  .footer-container {
+    padding-top: 0;
+    background-color: var(--secondary-blue-color);
+    padding-inline: 20px;
+  }
+
+  .footer-title {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24.61px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-top: 30px;
+  }
+
+  .footer-text {
+    padding-bottom: 30px;
+    color: white;
+  }
+
+}
+
+
+@media screen and (min-width: 1150px) {
+  .header {
+    padding-block: 0;
+  }
+
+  .header-container {
+    padding-top: 79px;
+    padding-bottom: 141px;
+  }
+
+  .header-list-menu {
+    flex-direction: row;
+    max-width: 1110px;
+  }
+
+  .header-item-menu {
+    margin-right: 41px;
+    margin-bottom: 162px;
+  }
+
+  .header-link-item:hover {
+    color: rgba(52, 84, 122, 1);
+    font-weight: 500;
+  }
+
+  .header-gen-text {
+    margin-bottom: 60px;
+
+  }
+
+  .header-about {
+    margin-bottom: 65px;
+    width: 540px;
+  }
+
+  .header-button {
+    justify-self: flex-start;
+    margin-bottom: 0;
+  }
+
+
+
+  .main-title {
+    margin-top: 112px;
+    margin-bottom: 50px;
+  }
+
+  .main-text {
+    margin-bottom: 50px;
+    padding-bottom: 0;
+    max-width: 540px;
+    margin-inline: auto;
+
+  }
+
+  .secondary-pj-container {
+    margin-bottom: 0;
+  }
+
+  .projects-list {
+    padding: 100px 0 100px 0;
+  }
+
+  .about-me-container {
+    background-color: var(--primary-grey-color);
+    padding-bottom: 100px;
+  }
+
+  .main-title-container {
+    padding: 0;
+  }
+
+  .main-title-about-me {
+    margin-top: 0;
+    padding-top: 100px;
+  }
+
+  .my-work-text {
+    width: 540px;
+    margin-inline: auto;
+    margin-bottom: 57px;
+  }
+
+
+
+
+  .footer {
+    padding-block: 0;
+    background-color: var(--secondary-blue-color);
+  }
+
+  .footer-title {
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .footer-text {
+    padding-bottom: 50px;
+  }
 }

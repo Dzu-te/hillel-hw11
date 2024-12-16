@@ -6,10 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gulp</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 
 <body>
-  <h1>INDEX PAGE</h1>
+  <header class="header">
+    <div class="container header-container">
+      <nav class="header-nav">
+        <ul class="header-list-menu">
+          <li class="header-item-menu"><a class="header-link-item" href="#general"> ГЛАВНАЯ</a></li>
+          <li class="header-item-menu"><a class="header-link-item" href="#about-me"> ОБ АВТОРЕ</a></li>
+          <li class="header-item-menu"><a class="header-link-item" href="#projects"> РАБОТЫ</a></li>
+          <li class="header-item-menu"><a class="header-link-item" href="#process"> ПРОЦЕСС</a></li>
+          <li class="header-item-menu"><a class="header-link-item" href="#contacts"> КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <h1 class="header-gen-text" id="general">Дизайн и верстка</h1>
+      <p class="header-about text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+        Ipsum
+        является стандартной "рыбой" для
+        текстов на латинице с начала XVI века.</p>
+      <button class="header-button text" id="contacts">НАПИСАТЬ МНЕ</button>
+    </div>
+  </header>
+  <main class="main">
+    <h2 class="main-title">Обо мне</h2>
+    <p class="main-text text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+      является стандартной "рыбой" для
+      текстов на латинице с начала XVI века.</p>
+    <div class="pj-container" id="projects">
+      <div class="container secondary-pj-container">
+        <ul class="projects-list">
+          <li class="projects-item">40+ <br><span class="pj-item-text text">проектов</span></li>
+          <li class="projects-item">40+ <br><span class="pj-item-text text">проектов</span></li>
+          <li class="projects-item">40+ <br><span class="pj-item-text text">проектов</span></li>
+          <li class="projects-item">40+ <br><span class="pj-item-text text">проектов</span></li>
+          <li class="projects-item">40+ <br><span class="pj-item-text text">проектов</span></li>
+          <li class="projects-item">40+ <br><span class="pj-item-text text">проектов</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <section class="about-me-container ">
+    <div class=" main-title-container container" id="about-me">
+      <h2 class="main-title main-title-about-me">Как я работаю</h2>
+      <p class="my-work-text text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+        Ipsum является
+        стандартной
+        "рыбой" для
+        текстов на латинице с начала XVI века.</p>
+      <div class="video-container">
+        <iframe class="video" src="https://www.youtube.com/embed/13m5-0EOwIM?si=kUuyJipu94fbyOUT"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <h3 class="footer-title">Иванов Иван</h3>
+      <p class="text footer-text">(с) 2018. Все права защищены.</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
