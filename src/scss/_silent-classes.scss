@@ -1,0 +1,16 @@
+%global-font-parameters{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.25px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #727272;
+}
+
+
+
+%global-container-parameters{
+  max-width: 1110px;
+    margin-inline: auto;
+}
