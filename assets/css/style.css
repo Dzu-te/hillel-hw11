@@ -277,7 +277,7 @@ body{
     background-color:#EEEFF1;
   }
   .about-me-container .main-title-container{
-    padding:20px;
+    padding:0 20px 0 20px;
     padding-bottom:50px;
   }
   .about-me-container .main-title-container .main-title-about-me{
@@ -288,11 +288,11 @@ body{
     text-underline-position:from-font;
     -webkit-text-decoration-skip-ink:none;
             text-decoration-skip-ink:none;
-    margin-top:30px;
-    margin-bottom:20px;
+    padding-top:100px;
+    margin-bottom:50px;
   }
   .about-me-container .main-title-container .my-work-text{
-    margin-bottom:20px;
+    margin-bottom:50px;
   }
   .about-me-container .main-title-container .video-container{
     position:relative;

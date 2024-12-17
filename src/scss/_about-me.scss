@@ -9,18 +9,18 @@
 
     .main-title-container {
 
-      padding: 20px;
+      padding: 0 20px 0 20px;
       padding-bottom: 50px;
 
       .main-title-about-me {
         @include font-medium-parameters;
         text-decoration-skip-ink: none;
-        margin-top: 30px;
-        margin-bottom: 20px;
+        padding-top: 100px;
+        margin-bottom: 50px;
       }
 
       .my-work-text {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
       }
 
       .video-container {
