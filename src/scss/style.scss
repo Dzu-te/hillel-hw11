@@ -1,5 +1,5 @@
 @use "reset";
-
+@use "header";
 @use "colors" as *;
 @use "silent-classes" as *;
 @use "mixins" as *;
@@ -8,18 +8,23 @@
 
 .text {
   @extend %global-font-parameters;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .container {
   @extend %global-container-parameters;
 }
 
+ body {
+
+   // min-width: 0px;
+   height: 100vh;
+ }
+
 @media screen and (min-width: 0px) {
 
-  body {
-
-    min-width: 0px;
-    height: 100vh;
+ 
 
     .header {
       background-color: $primary-grey-color;
@@ -61,7 +66,8 @@
         }
 
         .header-about {
-          margin-bottom: 30px;
+          margin: 0 auto 30px 0;
+          
         }
 
         .header-button {
@@ -184,20 +190,22 @@
           text-underline-position: from-font;
           text-decoration-skip-ink: none;
           padding-top: 30px;
+          margin-bottom: 20px;
         }
 
         .footer-text {
           padding-bottom: 30px;
           color: white;
+          margin-left: 0;
         }
       }
     }
   }
-}
+
 
 @media screen and (min-width: 1150px) {
 
-  body {
+  
     .header {
       padding-block: 0;
 
@@ -290,8 +298,7 @@
       .footer-container {
 
         .footer-title {
-          padding-top: 50px;
-          margin-bottom: 20px;
+          padding-top: 50px;          
         }
 
         .footer-text {
@@ -300,4 +307,3 @@
       }
     }
   }
-}

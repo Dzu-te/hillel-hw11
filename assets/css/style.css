@@ -149,24 +149,29 @@ table{
   margin-inline:auto;
 }
 
+.text{
+  max-width:540px;
+  margin:0 auto;
+}
+
+body{
+  height:100vh;
+}
+
 @media screen and (min-width: 0px){
-  body{
-    min-width:0px;
-    height:100vh;
-  }
-  body .header{
+  .header{
     background-color:#EEEFF1;
     padding-inline:20px;
     padding-top:20px;
     padding-bottom:50px;
   }
-  body .header-container{
+  .header-container{
     padding-top:79px;
   }
-  body .header-container .header-nav{
+  .header-container .header-nav{
     margin-bottom:30px;
   }
-  body .header-container .header-nav .header-list-menu{
+  .header-container .header-nav .header-list-menu{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -178,7 +183,7 @@ table{
     gap:20px;
     max-width:611px;
   }
-  body .header-container .header-nav .header-list-menu .header-link-item{
+  .header-container .header-nav .header-list-menu .header-link-item{
     font-family:Roboto;
     font-size:16px;
     font-weight:400;
@@ -191,7 +196,7 @@ table{
     text-align:left;
     color:black;
   }
-  body .header-container .header-gen-text{
+  .header-container .header-gen-text{
     font-family:Roboto;
     font-size:38px;
     font-weight:500;
@@ -202,10 +207,10 @@ table{
             text-decoration-skip-ink:none;
     margin-bottom:20px;
   }
-  body .header-container .header-about{
-    margin-bottom:30px;
+  .header-container .header-about{
+    margin:0 auto 30px 0;
   }
-  body .header-container .header-button{
+  .header-container .header-button{
     padding:19px 41px 20px 41px;
     color:white;
     background-color:#34547A;
@@ -215,7 +220,7 @@ table{
     display:-ms-flexbox;
     display:flex;
   }
-  body .main-title{
+  .main-title{
     font-family:Roboto;
     font-size:32px;
     line-height:37.5px;
@@ -226,19 +231,19 @@ table{
     margin-top:30px;
     margin-bottom:20px;
   }
-  body .main-text{
+  .main-text{
     padding-bottom:20px;
     padding-inline:20px;
   }
-  body .main .pj-container{
+  .main .pj-container{
     background-color:#34547A;
     width:100%;
   }
-  body .main .pj-container .secondary-pj-container{
+  .main .pj-container .secondary-pj-container{
     margin-top:0;
     padding-top:0;
   }
-  body .main .pj-container .secondary-pj-container .projects-list{
+  .main .pj-container .secondary-pj-container .projects-list{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -253,7 +258,7 @@ table{
     gap:20px;
     padding-inline:20px;
   }
-  body .main .pj-container .secondary-pj-container .projects-list .projects-item{
+  .main .pj-container .secondary-pj-container .projects-list .projects-item{
     font-family:Roboto;
     font-size:21px;
     font-weight:500;
@@ -266,19 +271,19 @@ table{
     background:left no-repeat url(../images/project.png);
     padding-left:70px;
   }
-  body .main .pj-container .secondary-pj-container .projects-list .projects-item .pj-item-text{
+  .main .pj-container .secondary-pj-container .projects-list .projects-item .pj-item-text{
     text-align:left;
     color:white;
     vertical-align:text-bottom;
   }
-  body .about-me-container{
+  .about-me-container{
     background-color:#EEEFF1;
   }
-  body .about-me-container .main-title-container{
+  .about-me-container .main-title-container{
     padding:20px;
     padding-bottom:50px;
   }
-  body .about-me-container .main-title-container .main-title-about-me{
+  .about-me-container .main-title-container .main-title-about-me{
     font-family:Roboto;
     font-size:32px;
     line-height:37.5px;
@@ -289,16 +294,16 @@ table{
     margin-top:30px;
     margin-bottom:20px;
   }
-  body .about-me-container .main-title-container .my-work-text{
+  .about-me-container .main-title-container .my-work-text{
     margin-bottom:20px;
   }
-  body .about-me-container .main-title-container .video-container{
+  .about-me-container .main-title-container .video-container{
     position:relative;
     width:100%;
     padding-bottom:56.25%;
     height:0;
   }
-  body .about-me-container .main-title-container .video-container .video{
+  .about-me-container .main-title-container .video-container .video{
     position:absolute;
     top:0;
     left:0;
@@ -306,15 +311,15 @@ table{
     height:100%;
     margin-bottom:100px;
   }
-  body .footer{
+  .footer{
     color:white;
   }
-  body .footer-container{
+  .footer-container{
     padding-top:0;
     background-color:#34547A;
     padding-inline:20px;
   }
-  body .footer-container .footer-title{
+  .footer-container .footer-title{
     font-family:Roboto;
     font-size:21px;
     font-weight:500;
@@ -324,70 +329,72 @@ table{
     -webkit-text-decoration-skip-ink:none;
             text-decoration-skip-ink:none;
     padding-top:30px;
+    margin-bottom:20px;
   }
-  body .footer-container .footer-text{
+  .footer-container .footer-text{
     padding-bottom:30px;
     color:white;
+    margin-left:0;
   }
 }
 
 @media screen and (min-width: 1150px){
-  body .header{
+  .header{
     padding-block:0;
   }
-  body .header-container{
+  .header-container{
     padding-top:79px;
     padding-bottom:141px;
   }
-  body .header-container .header-nav .header-list-menu{
+  .header-container .header-nav .header-list-menu{
     -webkit-box-orient:horizontal;
     -webkit-box-direction:normal;
         -ms-flex-direction:row;
             flex-direction:row;
     max-width:1110px;
   }
-  body .header-container .header-nav .header-list-menu .header-item-menu{
+  .header-container .header-nav .header-list-menu .header-item-menu{
     margin-right:41px;
     margin-bottom:162px;
   }
-  body .header-container .header-nav .header-list-menu .header-item-menu .header-link-item:hover{
+  .header-container .header-nav .header-list-menu .header-item-menu .header-link-item:hover{
     color:rgb(52, 84, 122);
     font-weight:500;
   }
-  body .header-container .header-gen-text{
+  .header-container .header-gen-text{
     margin-bottom:60px;
   }
-  body .header-container .header-about{
+  .header-container .header-about{
     margin-bottom:65px;
     width:540px;
   }
-  body .header-container .header-button{
+  .header-container .header-button{
     justify-self:flex-start;
     margin-bottom:0;
   }
-  body .main-title{
+  .main-title{
     margin-top:112px;
     margin-bottom:50px;
   }
-  body .main-text{
+  .main-text{
     margin-bottom:50px;
     padding-bottom:0;
     max-width:540px;
     margin-inline:auto;
   }
-  body .main-pj-container{
+  .main-pj-container{
     margin-bottom:0;
   }
-  body .main-pj-container-list{
+  .main-pj-container-list{
     padding:100px 0 100px 0;
   }
-  body .about-me-container{
+  .about-me-container{
     padding-bottom:100px;
   }
-  body .about-me-container .main-title-container{
+  .about-me-container .main-title-container{
     padding:0;
   }
-  body .about-me-container .main-title-container .main-title-about-me{
+  .about-me-container .main-title-container .main-title-about-me{
     font-family:Roboto;
     font-size:32px;
     line-height:37.5px;
@@ -396,20 +403,19 @@ table{
     margin:0 0 50px 0;
     padding-top:100px;
   }
-  body .about-me-container .main-title-container .my-work-text{
+  .about-me-container .main-title-container .my-work-text{
     width:540px;
     margin-inline:auto;
     margin-bottom:57px;
   }
-  body .footer{
+  .footer{
     padding-block:0;
     background-color:#34547A;
   }
-  body .footer .footer-container .footer-title{
+  .footer .footer-container .footer-title{
     padding-top:50px;
-    margin-bottom:20px;
   }
-  body .footer .footer-container .footer-text{
+  .footer .footer-container .footer-text{
     padding-bottom:50px;
   }
 }
