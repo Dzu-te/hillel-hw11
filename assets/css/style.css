@@ -160,13 +160,13 @@ table{
     padding-top:20px;
     padding-bottom:50px;
   }
-  body .header .header-container{
+  body .header-container{
     padding-top:79px;
   }
-  body .header .header-container .header-nav{
+  body .header-container .header-nav{
     margin-bottom:30px;
   }
-  body .header .header-container .header-nav .header-list-menu{
+  body .header-container .header-nav .header-list-menu{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -176,9 +176,9 @@ table{
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
     gap:20px;
-    max-width:732px;
+    max-width:611px;
   }
-  body .header .header-container .header-nav .header-list-menu .header-link-item{
+  body .header-container .header-nav .header-list-menu .header-link-item{
     font-family:Roboto;
     font-size:16px;
     font-weight:400;
@@ -191,7 +191,7 @@ table{
     text-align:left;
     color:black;
   }
-  body .header .header-container .header-gen-text{
+  body .header-container .header-gen-text{
     font-family:Roboto;
     font-size:38px;
     font-weight:500;
@@ -202,10 +202,10 @@ table{
             text-decoration-skip-ink:none;
     margin-bottom:20px;
   }
-  body .header .header-container .header-about{
+  body .header-container .header-about{
     margin-bottom:30px;
   }
-  body .header .header-container .header-button{
+  body .header-container .header-button{
     padding:19px 41px 20px 41px;
     color:white;
     background-color:#34547A;
@@ -215,7 +215,7 @@ table{
     display:-ms-flexbox;
     display:flex;
   }
-  body .main .main-title{
+  body .main-title{
     font-family:Roboto;
     font-size:32px;
     line-height:37.5px;
@@ -226,7 +226,7 @@ table{
     margin-top:30px;
     margin-bottom:20px;
   }
-  body .main .main-text{
+  body .main-text{
     padding-bottom:20px;
     padding-inline:20px;
   }
@@ -309,12 +309,12 @@ table{
   body .footer{
     color:white;
   }
-  body .footer .footer-container{
+  body .footer-container{
     padding-top:0;
     background-color:#34547A;
     padding-inline:20px;
   }
-  body .footer .footer-container .footer-title{
+  body .footer-container .footer-title{
     font-family:Roboto;
     font-size:21px;
     font-weight:500;
@@ -325,7 +325,7 @@ table{
             text-decoration-skip-ink:none;
     padding-top:30px;
   }
-  body .footer .footer-container .footer-text{
+  body .footer-container .footer-text{
     padding-bottom:30px;
     color:white;
   }
@@ -335,50 +335,50 @@ table{
   body .header{
     padding-block:0;
   }
-  body .header .header-container{
+  body .header-container{
     padding-top:79px;
     padding-bottom:141px;
   }
-  body .header .header-container .header-nav .header-list-menu{
+  body .header-container .header-nav .header-list-menu{
     -webkit-box-orient:horizontal;
     -webkit-box-direction:normal;
         -ms-flex-direction:row;
             flex-direction:row;
     max-width:1110px;
   }
-  body .header .header-container .header-nav .header-list-menu .header-item-menu{
+  body .header-container .header-nav .header-list-menu .header-item-menu{
     margin-right:41px;
     margin-bottom:162px;
   }
-  body .header .header-container .header-nav .header-list-menu .header-item-menu .header-link-item:hover{
+  body .header-container .header-nav .header-list-menu .header-item-menu .header-link-item:hover{
     color:rgb(52, 84, 122);
     font-weight:500;
   }
-  body .header .header-container .header-gen-text{
+  body .header-container .header-gen-text{
     margin-bottom:60px;
   }
-  body .header .header-container .header-about{
+  body .header-container .header-about{
     margin-bottom:65px;
     width:540px;
   }
-  body .header .header-container .header-button{
+  body .header-container .header-button{
     justify-self:flex-start;
     margin-bottom:0;
   }
-  body .main .main-title{
+  body .main-title{
     margin-top:112px;
     margin-bottom:50px;
   }
-  body .main .main-text{
+  body .main-text{
     margin-bottom:50px;
     padding-bottom:0;
     max-width:540px;
     margin-inline:auto;
   }
-  body .main .secondary-pj-container{
+  body .main-pj-container{
     margin-bottom:0;
   }
-  body .main .secondary-pj-container .projects-list{
+  body .main-pj-container-list{
     padding:100px 0 100px 0;
   }
   body .about-me-container{
