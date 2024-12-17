@@ -1,0 +1,54 @@
+@use "colors" as *;
+@use "silent-classes" as *;
+@use "mixins" as *;
+
+@media screen and (min-width: 0px) {
+
+  .footer {
+    color: white;
+
+    &-container {
+      padding-top: 0;
+      background-color: $secondary-blue-color;
+      padding-inline: 20px;
+
+      .footer-title {
+        font-family: Roboto;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 24.61px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        padding-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .footer-text {
+        padding-bottom: 30px;
+        color: white;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1150px) {
+
+  .footer {
+    padding-block: 0;
+    background-color: $secondary-blue-color;
+
+    .footer-container {
+
+      .footer-title {
+        padding-top: 50px;
+      }
+
+      .footer-text {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@use "colors" as *;
+@use "silent-classes" as *;
+@use "mixins" as *;
+
+@media screen and (min-width: 0px) {
+
+  .about-me-container {
+    background-color: $primary-grey-color;
+
+    .main-title-container {
+
+      padding: 20px;
+      padding-bottom: 50px;
+
+      .main-title-about-me {
+        @include font-medium-parameters;
+        text-decoration-skip-ink: none;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .my-work-text {
+        margin-bottom: 20px;
+      }
+
+      .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+
+        .video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .about-me-container {
+
+    padding-bottom: 100px;
+
+    .main-title-container {
+      padding: 0;
+
+      .main-title-about-me {
+        @include font-medium-parameters;
+        margin: 0 0 50px 0;
+        padding-top: 100px;
+      }
+
+      .my-work-text {
+        width: 540px;
+        margin-inline: auto;
+        margin-bottom: 57px;
+      }
+    }
+  }
+}

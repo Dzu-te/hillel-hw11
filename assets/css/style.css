@@ -148,7 +148,6 @@ table{
   max-width:1110px;
   margin-inline:auto;
 }
-
 .text{
   max-width:540px;
   margin:0 auto;
@@ -216,9 +215,7 @@ body{
     background-color:#34547A;
     border:0;
     letter-spacing:0.1em;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
+    margin-left:0;
   }
   .main-title{
     font-family:Roboto;
@@ -228,11 +225,11 @@ body{
     text-underline-position:from-font;
     -webkit-text-decoration-skip-ink:none;
             text-decoration-skip-ink:none;
-    margin-top:30px;
+    margin-top:112px;
     margin-bottom:20px;
   }
   .main-text{
-    padding-bottom:20px;
+    margin-bottom:100px;
     padding-inline:20px;
   }
   .main .pj-container{
